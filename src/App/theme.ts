@@ -1,25 +1,36 @@
 import { createTheme } from '@mui/material';
+import { green, red } from '@mui/material/colors';
 
 export const theme = createTheme({
   palette: {
+    background: {
+      default: '#ede7f6',
+      paper: '#fff',
+    },
     primary: {
-      main: '#7F7FD5',
+      main: '#7b53eb',
     },
     secondary: {
-      main: '#FFD6A5',
+      main: '#a77bea',
     },
     success: {
-      main: '#86E57F',
+      main: green[600],
     },
     error: {
-      main: '#FF8A9A',
+      main: red[600],
     },
     text: {
-      primary: '#3D3D57',
-      secondary: '#536380',
+      primary: '#1f1244',
     },
   },
   typography: {
     fontFamily: 'Inter, sans-serif',
   },
+  // components: {
+  //   MuiTextField: {
+  //     defaultProps: {
+  //       size: 'small',
+  //     },
+  //   },
+  // },
 });
